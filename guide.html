@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>安装指南 · 方块仓库</title><meta name="description" content="选择、安装并核对 Minecraft 模组发布包。">
+<meta name="theme-color" content="#244e43"><link rel="icon" href="assets/icons/warehouse.png" type="image/png">
+<link rel="stylesheet" href="assets/site.css"><script defer src="assets/site.js"></script></head>
+<body><a class="skip" href="#main">跳到主要内容</a><header class="site-header"><div class="wrap mast">
+<a class="brand" href="index.html"><img src="assets/icons/warehouse.png" width="42" height="42" alt="">方块仓库</a>
+<nav class="top-nav" aria-label="主导航"><a href="index.html#catalog">资源目录</a>
+<a href="guide.html" aria-current="page"><i class="ico book-icon" aria-hidden="true"></i>安装指南</a></nav></div></header>
+<main id="main" class="wrap inside">
+  <a class="back" href="index.html#catalog"><i class="ico back-icon" aria-hidden="true"></i>返回资源目录</a>
+  <article class="guide">
+    <h1>安装指南</h1>
+    <section><h2>选择匹配的文件</h2><p>在启动器中查看实例的 Minecraft Java 版版本和加载器，然后在资源目录选择同样的游戏版本与 Forge 或 NeoForge。打开模组详情可以查看每个发布包的前置依赖、适用端和注意事项。</p></section>
+    <section><h2>安装单个模组</h2><p>退出游戏，在启动器中打开目标实例的游戏目录，将下载的 <code>.jar</code> 原样放入 <code>mods</code> 文件夹。更新时先移出同一 Mod ID 的旧 JAR，再启动这个实例。需要前置模组的文件，请一并安装详情中注明的对应版本。</p></section>
+    <section><h2>使用完整套装</h2><p>将下载的 ZIP 解压到单独的文件夹，阅读其中的 <code>README.md</code>。套装按当次发布的版本配套，手动安装时将套装内 <code>mods</code> 目录里的 JAR 放入目标实例，并先移出同名模组的其他版本。</p></section>
+    <section><h2>核对下载文件</h2><p>在文件所在目录打开 PowerShell，将下方的文件名替换为实际名称。把输出的 SHA-256 与模组详情里的完整校验值对照，两者应一致。</p><pre><code>Get-FileHash -Algorithm SHA256 -LiteralPath '.\文件名.jar'</code></pre></section>
+    <section><h2>使用测试工具</h2><p>「测试工具」收录用于对照测试的模组，请放在单独的测试实例中。标有「待实机复测」的游玩版本可在对应文件的说明中查看状态。</p></section>
+  </article>
+</main>
+
+<footer class="footer wrap"><a href="index.html"><img src="assets/icons/warehouse.png" alt="" width="22" height="22">方块仓库</a>
+<div class="footer-links"><a id="mainland-link" href="https://hell-space.github.io/blockdepot-mods/">大陆下载入口</a><span>Minecraft Java 版模组下载站</span></div></footer></body></html>
